@@ -42,6 +42,6 @@ df |>
 
 ```{r}
 df |>
-  ggplot() + aes(x = what_is_your_favorite_core_class, fill=what_is_your_favorite_elective_class) + geom_bar() + coord_flip() + labs(x = "Elective Class", y="Frequency", fill=NULL)
+  ggplot() + aes(x = what_is_your_favorite_core_class, fill=what_is_your_favorite_elective_class) + geom_bar(position="dodge") + coord_flip() + labs(x = "Elective Class", y="Frequency", fill=NULL)
 
 ```
